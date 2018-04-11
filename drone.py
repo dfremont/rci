@@ -227,7 +227,7 @@ def dumpPath(path, id=''):
 	with open('path'+str(id)+'.txt', 'w') as out:
 		for pos in path:
 			x, y, z = gazeboPosition(pos)
-			out.write(str(x)+', '+str(y)+', '+str(z)+'\n')
+			out.write(str(x)+' '+str(y)+' '+str(z)+'\n')
 
 def genPaths(tester, paths=10):
 	for i in range(paths):
